@@ -8,6 +8,7 @@ nav {
   justify-content: center;
   padding: 15px 0;
   /* position ?  */
+  position: fixed;
 
 }
 
@@ -15,9 +16,11 @@ nav {
 /* Ouvrez "exercice2.html" puis trouvez comment parfaitement centrer la div ".square" dans ".box". (sur X et Y). */
 
 .box {
+  position: relative;
 }
 
 .square {
+  position: absolute;
   background: violet;
 }
 
@@ -28,26 +31,26 @@ C'est à dire des boutons qui vont flotter à un point donné, qui vont tout le 
 Placez donc ces quatres boutons en fonction du texte qu'ils contiennent.
 Utilisez un décalage de "15px" à chaque fois, pour qu'ils ne soient pas collés aux bords.
 */
-
 .floating-btn {
-
+  position: fixed;
 }
 .b1 {
-
+  top: 15px; left:15px;
 }
 .b2 {
-
+  top: 15px; right:15px;
 }
 .b3 {
-
+  bottom: 15px;  left: 15px;
 }
 .b4 {
-
+  bottom: 15px;  right: 15px;
 }
 
 /* Exercice 4 */
 /* Essayez de décaler la div ".home-content" de 100px depuis le top tout en restant dans le flux du document. */
 
 .home-content {
+  position: relative;
   top: 100px;
 }
